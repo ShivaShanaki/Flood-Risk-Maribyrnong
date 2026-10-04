@@ -29,6 +29,10 @@ This project maps composite flood risk across the Maribyrnong River corridor in 
 
 **Note:** 9 of 196 SA1s (4.6%) returned a NULL risk score due to gaps in DEM coverage over open space/parkland near the river (e.g. Fairbairn Park, Riverside Golf/Tennis/Netball Centre) and were excluded from the population calculations below.
 
+## Interactive Web Map
+Explore the results on an interactive ArcGIS Online map. Click any SA1 to see its risk class, composite risk score, population, area and the elevation and river-proximity components.
+🔗 [Open the web map](https://arcg.is/05DS4u5)
+
 ## Results
 
 ![Flood Risk Map](Flood_Risk_Map_Maribyrnong.png)
@@ -36,7 +40,7 @@ This project maps composite flood risk across the Maribyrnong River corridor in 
 | Risk Category | Population | % of Study Area Population |
 |---|---|---|
 | High + Very High (Risk Score ≥ 0.61) | 38,302 | **48.9%** |
-| Low + Very Low (Risk Score ≤ 0.42) | 12,354 | **15.8%** |
+| Low (Risk Score ≤ 0.42) | 12,354 | **15.8%** |
 | Total (valid SA1s only) | 78,338 | 100% |
 
 Nearly **half of the study area's population** lives in areas classified as High or Very High flood risk — concentrated around the Maribyrnong River's floodplain near Flemington Racecourse and extending toward Kensington and Docklands.
@@ -45,7 +49,7 @@ Nearly **half of the study area's population** lives in areas classified as High
 The composite risk model was visually compared against Melbourne Water's **LSIO (Land Subject to Inundation Overlay)**, accessed via VicPlan. The two datasets show strong spatial agreement:
 
 - Both independently identify the **Flemington Racecourse floodplain** and the corridor extending toward **Kensington/Docklands** as the highest-risk zone.
-- The transitional (Medium risk) band in **Maidstone and West Footscray** aligns with the outer edge of the official LSIO extent.
+- The transitional (Moderate risk) band in **Maidstone and West Footscray** aligns with the outer edge of the official LSIO extent.
 - Minor discrepancies appear near smaller drainage channels not captured in the OSM-derived river network used in this model — a known limitation of relying on volunteer-mapped hydrology data.
 
 *(See `LSIO_comparison_vicplan.png` and `RiskScore_QGIS_comparison.png` for the side-by-side maps.)*
